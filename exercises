@@ -1,0 +1,13 @@
+void ft_putchar(void);
+
+void ft_print_alphabet(void) {
+	int count;
+	
+
+	count = 0;
+	while (count < 20)
+	{
+		ft_putchar();
+		count++;
+
+	}
