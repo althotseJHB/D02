@@ -16,13 +16,13 @@ void ft_print_comb(void)
       {
         while (c <= 9) {
           ft_putchar(c);
-          c++
+          c++;
         }
         ft_putchar(b);
-        b++
+        b++;
       }
     ft_putchar(a);
-    a++
+    a++;
     }
 }
 
