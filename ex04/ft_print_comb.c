@@ -10,11 +10,11 @@ void ft_print_comb(void)
   char b = '0';
   char c = '0';
 
-    while (a <= 9)
+    while (a <= '9')
     {
-      while (b <= 9)
+      while (b <= '9')
       {
-        while (c <= 9) {
+        while (c <= '9') {
           ft_putchar(c);
           c++;
         }
