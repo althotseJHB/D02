@@ -1,26 +1,23 @@
-#include <stdio.h>
-#include <unistd.h>
+##include <unistd.h>
 
-void ft_putchar(int c){
+void ft_putchar(int i)
+{
   write(1,&c,1);
 }
 
-int n = '-15';
+void ft_is_negative(int i) {
+  char a = 'P';
+  char b = 'N';
 
-void ft_is_negative(int n)
-{
-  int c;
-  c = '0';
-  if (c < 0) {
-    ft_putchar('N');
-  }
-  if (c >= 0) {
-    ft_putchar('P');
+  if (i>0) {
+    ft_putchar(a);
+  } else {
+    ft_putchar(b);
   }
 }
 
-
-int main() {
-  ft_is_negative(n);
+int int main() {
+  ft_is_negative(4);
+  // test other numbers to see if the code works
   return 0;
 }
