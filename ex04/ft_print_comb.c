@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_comb.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: althotse <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/07/15 14:04:11 by althotse          #+#    #+#             */
+/*   Updated: 2020/07/15 14:06:45 by althotse         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
 void ft_putchar(char c)
@@ -29,28 +41,23 @@ void ft_print_comb(void)
           ft_print_numb(a,b,c);
    		  c++;
         }
-    c = 0;
-	b++;
+   		c = 0;
+		b++;
       }
-	b=0;
-    while (a <= '9')
-    {
-      while (b <= '9')
-      {
-        while (c <= '9') {
-          ft_putchar(c);
-          c++;
-        }
-        ft_putchar(b);
-        b++;
-      }
-    ft_putchar(a);
-    a++;
-    }
-}
-
-int main()
-{
-  ft_print_comb();
-  return 0;
+		b=0;
+   		 while (a <= '9')
+   		 {
+     	 while (b <= '9')
+      		{
+       		 while (c <= '9') 
+				{
+       			   ft_putchar(c);
+         			c++;
+       			 }
+       		 ft_putchar(b);
+      		 b++;
+     		 }
+   		 ft_putchar(a);
+   		 a++;
+   		 }
 }
