@@ -1,4 +1,15 @@
-#include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: althotse <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/07/15 13:48:52 by althotse          #+#    #+#             */
+/*   Updated: 2020/07/15 13:58:53 by althotse         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
 void ft_putchar(char alpha){
@@ -11,14 +22,7 @@ void ft_print_alphabet(void)
   alpha = 'a';
   while (alpha <= 'z')
   {
-    // write(1,&alpha,1); "could also be written here and neglect ft_putchar"
     ft_putchar(alpha);
     alpha++;
   }
-}
-
-
-int main() {
-  ft_print_alphabet();
-  return 0;
 }
