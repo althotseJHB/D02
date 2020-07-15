@@ -10,17 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 
 
 void ft_putchar(char alpha){
-  write(1,&alpha,1);
+
 }
 
 void ft_print_alphabet(void)
 {
   char alpha;
   alpha = 'z';
+  
   while (alpha >= 'a')
   {
     ft_putchar(alpha);
