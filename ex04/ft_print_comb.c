@@ -10,11 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
 void ft_putchar(char c)
 {
-  write(1,&c,1);
+
 }
 void ft_print_numb(char a, char b, char c)
 {
@@ -32,7 +30,7 @@ void ft_print_comb(void)
   char b = '0';
   char c = '0';
 
-    while (a < '9')
+  while (a < '9')
     {
       while (b < '9')
       {
@@ -42,14 +40,14 @@ void ft_print_comb(void)
    		  c++;
         }
    		c = 0;
-		b++;
+		    b++;
       }
 		b=0;
    		 while (a <= '9')
    		 {
      	 while (b <= '9')
       		{
-       		 while (c <= '9') 
+       		 while (c <= '9')
 				{
        			   ft_putchar(c);
          			c++;
