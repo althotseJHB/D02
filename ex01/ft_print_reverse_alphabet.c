@@ -1,4 +1,15 @@
-#include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: althotse <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/07/15 13:57:45 by althotse          #+#    #+#             */
+/*   Updated: 2020/07/15 13:57:52 by althotse         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
 
@@ -12,14 +23,7 @@ void ft_print_alphabet(void)
   alpha = 'z';
   while (alpha >= 'a')
   {
-    // write(1,&alpha,1);
     ft_putchar(alpha);
     alpha--;
   }
-}
-
-
-int main() {
-  ft_print_alphabet();
-  return 0;
 }
