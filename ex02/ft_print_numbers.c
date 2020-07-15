@@ -1,4 +1,16 @@
-#include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: althotse <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/07/15 14:01:06 by althotse          #+#    #+#             */
+/*   Updated: 2020/07/15 14:01:13 by althotse         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+
 #include <unistd.h>
 
 void ft_putchar(char number){
@@ -11,14 +23,7 @@ void ft_print_number(void)
   number = '0';
   while (number <= '9')
   {
-    // write(1,&number,1); "could also be written here and neglect ft_putchar"
     ft_putchar(number);
     number++;
   }
-}
-
-
-int main() {
-  ft_print_number();
-  return 0;
 }
