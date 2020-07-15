@@ -10,11 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
 void ft_putchar(int i)
 {
-  write(1,&c,1);
+
 }
 
 void ft_is_negative(int i) {
