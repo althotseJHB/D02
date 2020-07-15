@@ -1,4 +1,16 @@
-##include <unistd.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: althotse <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/07/15 14:03:13 by althotse          #+#    #+#             */
+/*   Updated: 2020/07/15 14:03:25 by althotse         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <unistd.h>
 
 void ft_putchar(int i)
 {
@@ -14,10 +26,4 @@ void ft_is_negative(int i) {
   } else {
     ft_putchar(b);
   }
-}
-
-int int main() {
-  ft_is_negative(4);
-  // test other numbers to see if the code works
-  return 0;
 }
